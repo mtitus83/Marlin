@@ -1287,16 +1287,13 @@
  * Define this pin if the probe is not connected to Z_MIN_PIN.
  * If not defined the default pin for the selected MOTHERBOARD
  * will be used. Most of the time the default is what you want.
- *
- *  - The simplest option is to use a free endstop connector.
- *  - Use 5V for powered (usually inductive) sensors.
- *
+ * *  - The simplest option is to use a free endstop connector.  *  - Use 5V for powered (usually inductive) sensors.  *
  *  - RAMPS 1.3/1.4 boards may use the 5V, GND, and Aux4->D32 pin:
  *    - For simple switches connect...
  *      - normally-closed switches to GND and D32.
  *      - normally-open switches to 5V and D32.
  */
-//#define Z_MIN_PROBE_PIN 32 // Pin 32 is the RAMPS default
+#define Z_MIN_PROBE_PIN PC14
 
 /**
  * Probe Type
@@ -1485,7 +1482,7 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -40, -10, -1.85 }
+#define NOZZLE_TO_PROBE_OFFSET { -40, -10, -3.7 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
@@ -1884,8 +1881,8 @@
  * these options to restore the prior leveling state or to always enable
  * leveling immediately after G28.
  */
-//#define RESTORE_LEVELING_AFTER_G28
-#define ENABLE_LEVELING_AFTER_G28
+#define RESTORE_LEVELING_AFTER_G28
+//#define ENABLE_LEVELING_AFTER_G28
 
 /**
  * Auto-leveling needs preheating
@@ -2184,7 +2181,7 @@
 #define EEPROM_BOOT_SILENT    // Keep M503 quiet and only give errors during first load
 #if ENABLED(EEPROM_SETTINGS)
   #define EEPROM_AUTO_INIT    // Init EEPROM automatically on any errors.
-  //#define EEPROM_INIT_NOW   // Init EEPROM on first boot after a new build.
+  #define EEPROM_INIT_NOW   // Init EEPROM on first boot after a new build.
 #endif
 
 // @section host
