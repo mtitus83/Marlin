@@ -1482,7 +1482,11 @@
  *     |    [-]    |
  *     O-- FRONT --+
  */
-#define NOZZLE_TO_PROBE_OFFSET { -40, -10, -3.7 }
+
+// Use line below for Glass bed
+//#define NOZZLE_TO_PROBE_OFFSET { -40, -10, -3.7 }
+// Use line below for PEI bed
+#define NOZZLE_TO_PROBE_OFFSET { -40, -10, -2.8 }
 
 // Most probes should stay away from the edges of the bed, but
 // with NOZZLE_AS_PROBE this can be negative for a wider probing area.
