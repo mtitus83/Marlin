@@ -3715,6 +3715,9 @@
  *
  * Execute certain G-code commands immediately after power-on.
  */
+
+// Home, Update Mesh, Save to EPROM, and Reload EPROM on all power cycles
+#define STARTUP_COMMANDS "G28\nG29\nM500\nM420 S1"
 //#define STARTUP_COMMANDS "M17 Z"
 
 /**
