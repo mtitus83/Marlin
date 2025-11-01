@@ -669,9 +669,10 @@
     #define DEFAULT_Ki_LIST {   1.08,   1.08 }
     #define DEFAULT_Kd_LIST { 114.00, 114.00 }
   #else
-    #define DEFAULT_Kp  21.73
-    #define DEFAULT_Ki   1.54
-    #define DEFAULT_Kd  76.55
+    // PETG: Fan 15%, Hotend 240c
+    #define DEFAULT_Kp  41.29
+    #define DEFAULT_Ki   5.49
+    #define DEFAULT_Kd  77.62
   #endif
 #endif
 
