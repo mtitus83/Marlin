@@ -671,9 +671,9 @@
     #define DEFAULT_Kd_LIST { 114.00, 114.00 }
   #else
     // PETG: Fan 15%, Temp 240c
-    #define DEFAULT_Kp  28.76
-    #define DEFAULT_Ki   2.85
-    #define DEFAULT_Kd  72.52
+    #define DEFAULT_Kp  25.38
+    #define DEFAULT_Ki   2.20
+    #define DEFAULT_Kd  73.10
   #endif
 #endif
 
