@@ -758,9 +758,9 @@
   // from FOPDT model - kp=.39 Tp=405 Tdead=66, Tc set to 79.2, aggressive factor of .15 (vs .1, 1, 10)
   //
   // Bed Temp: 70c, Fan: 15%
-  #define DEFAULT_bedKp 92.79
-  #define DEFAULT_bedKi 17.84
-  #define DEFAULT_bedKd 321.66
+  #define DEFAULT_bedKp 93.70
+  #define DEFAULT_bedKi 17.74
+  #define DEFAULT_bedKd 329.84
 
   // FIND YOUR OWN: "M303 E-1 C8 S90" to run autotune on the bed at 90 degreesC for 8 cycles.
 #endif // PIDTEMPBED
